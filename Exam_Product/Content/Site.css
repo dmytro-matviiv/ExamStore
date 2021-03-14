@@ -1,0 +1,468 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+
+    background-image: url(https://i.pinimg.com/564x/4e/50/85/4e50851f993458277c0fb1b29543781b.jpg);
+    background: whiteSmoke;
+    padding: 5%;
+}
+.cover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+}
+.cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+@media (max-width: 550px) {
+    .cards {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+.card {
+    position: relative;
+    width: 31.33333%;
+    margin: 1%;
+    background: whiteSmoke;
+    box-shadow: 1px 1px 5px #999;
+}
+
+@media (max-width: 815px) {
+    .card {
+        width: 48%;
+    }
+}
+
+@media (max-width: 550px) {
+    .card {
+        width: 100%;
+    }
+}
+.card_photos {
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+}
+.card__inner {
+    position: relative;
+   
+    background-size: cover;
+    overflow: hidden;
+}
+
+    .card__inner h2 {
+        color: white;
+        margin: 0;
+        padding: 30% 0;
+        text-shadow: 1px 1px 3px #000;
+        line-height: 18px;
+        text-transform: uppercase;
+    }
+
+        .card__inner h2 small {
+            font-style: italic;
+            display: inherit;
+        }
+
+.card__buttons {
+    position: absolute;
+    width: 100%;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+    .card__buttons a {
+        position: relative;
+        float: left;
+        width: 50%;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+
+        .card__buttons a:first-child {
+            background: #fff;
+            border-right: 1px solid #ccc;
+        }
+
+        .card__buttons a:last-child {
+            background: #ffde00;
+        }
+
+        .card__buttons a:hover {
+            color: #ffde00;
+            background: #000;
+        }
+
+.card:hover .card__buttons {
+    -webkit-transform: translateY(-38px);
+    transform: translateY(-38px);
+}
+
+.card__tagline {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.card__icons {
+    margin: 0 0 50px;
+    padding: 0;
+    list-style: none;
+}
+
+    .card__icons li {
+        display: inline-block;
+        padding: 0 10px 10px;
+    }
+
+    .card__icons .fa {
+        font-size: .8rem;
+    }
+
+        .card__icons .fa:before {
+            font-size: 1.2rem;
+            display: block;
+            padding-bottom: 5px;
+        }
+
+.card p {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+.row{
+    color:white
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    height: 100%;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cover {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(images/klarna);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section1 {
+    background-color: white;
+    color: black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+    .section1 h2 {
+        font-size: 30px;
+    }
+
+    .section1 h1 {
+        width: 80px;
+        height: 3px;
+        background-color: black;
+    }
+
+    .section1 hr {
+        width: 30px;
+        background-color: black;
+    }
+
+.section2 {
+    background-image: url(https://tech.eu/wp-content/uploads/2020/03/Twitter-B2C-Start-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+}
+
+    .section2 button {
+        background-color: white;
+        color: black;
+        padding: 13px;
+        border: none;
+        font-size: 16px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .section2 hr {
+        width: 30px;
+        height: 2px;
+        background-color: white;
+    }
+
+.section3 {
+    padding: 100px;
+    background-color: white;
+}
+
+.MyCard img {
+    margin-bottom: 10px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", arial;
+    background-color:pink;
+    color: rgb(68, 36, 36);
+    font-weight: 300;
+}
+
+.fa-lg {
+    font-size: 1em;
+}
+
+.fa {
+    position: relative;
+    display: table-cell;
+    width: 55px;
+    height: 36px;
+    text-align: center;
+    top: 12px;
+    font-size: 20px;
+}
+
+
+
+.main-menu:hover, nav.main-menu.expanded {
+    width: 250px;
+    overflow: hidden;
+    opacity: 1;
+}
+
+.main-menu {
+    background: #F7F7F7;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 55px;
+    overflow: hidden;
+    transition: width .2s linear;
+    box-shadow: 1px 0 15px rgba(0, 0, 0, 0.07);
+    opacity: 1;
+}
+
+
+    .main-menu li > a {
+        position: relative;
+        width: 255px;
+        display: table;
+        border-collapse: collapse;
+        border-spacing: 0;
+        color: #8a8a8a;
+        font-size: 13px;
+        text-decoration: none;
+        transition: all .14s linear;
+        font-family: 'Strait', sans-serif;
+        border-top: 1px solid #f2f2f2;
+        text-shadow: 1px 1px 1px #fff;
+    }
+
+
+
+    .main-menu .nav-icon {
+        position: relative;
+        display: table-cell;
+        width: 55px;
+        height: 36px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 18px;
+    }
+
+    .main-menu .nav-text {
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        width: 1900px;
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+nav ul, nav li {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+
+.main-menu li:hover > a, nav.main-menu li.active > a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus, .no-touch .dashboard-page nav.dashboard-menu ul li:hover a, .dashboard-page nav.dashboard-menu ul li.active a {
+    color: #fff;
+    background-color: #00bbbb;
+    text-shadow: 0px 0px 0px;
+}
+
+.cont {
+    width: 74%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1000vh;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.card-img-top {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+}
+
+.btn-buy {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.section5 {
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+}
+
+    .section5 hr {
+        width: 200px;
+        height: 3px;
+        background-color: white;
+        border: none;
+    }
+
+.div1 {
+    padding-bottom: 250px;
+}
+
+.cover4 {
+    width: 100%;
+    background-image: url(images/pexels-aleksandar-pasaric-2707233.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.cover3 {
+    width: 100%;
+    background-image: url(https://www.ehandel.se/wp-content/uploads/2019/07/14521.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.btn {
+    background-color: pink !important;
+}
+
+.btn-danger {
+    background-color: pink !important;
+}
+
+h3::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+h3:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+h3::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: hsl(200 100% 80%);
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+h3 {
+    position: relative;
+    font-size: 5rem;
+}
+
+html {
+    block-size: 100%;
+    inline-size: 100%;
+}
+
+
+
+@media (orientation: landscape) {
+    body {
+        grid-auto-flow: column;
+    }
+}
+  

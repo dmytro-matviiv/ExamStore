@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Exam_Product.Models.ClothesViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+@Styles.Render("~/Content/site.css")
+<table class="table" style="background-image: url(https://i.pinimg.com/564x/0c/0b/e8/0c0be88b14a98cdc4bd8a524dc9c089f.jpg);">
+<br />    
+<br />    
+<br />    
+<p  class = "btn btn-info">
+    @Html.ActionLink("Create New", "CreateCloth" )
+</p>
+
+    
+
+    
+    @foreach (var item in Model)
+    {
+        
+        <ul class="cards" >
+            <li class="card">
+                <div class="card_photos">
+                    <h2>@Html.DisplayFor(modelItem => item.Name)<small></small></h2>
+                    <img src="@Html.DisplayFor(modelItem => item.URL_Image)" alt="paste image" width="250" srcset="" />
+                    <br />
+                    <br />
+                    <br />
+                    <div class="card__buttons">
+                        <a href="https://localhost:44393/Home/Contact">Buy</a>
+                        <a href="https://localhost:44393/Home/Contact">Detail</a>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <br />
+                <ul class="card__icons">
+                    <li>Price:<i class="fa-coffee">@Html.DisplayFor(modelItem => item.Price)</i></li>
+                    <li>Size:<i class="fa-bolt">@Html.DisplayFor(modelItem => item.Size)</i></li>
+                    <li>Color:<i class="fa-bomb"> @Html.DisplayFor(modelItem => item.Color)</i></li>
+
+                    <li><i class="fa-cutlery"><pre>@Html.ActionLink("Edit", "Edit", new { @class = "btn btn-info", id = item.Id }, new { @class = "btn btn-info" }) @Html.ActionLink("Delete", "Delete", new { @class = "btn btn-info", id = item.Id }, new { @class = "btn btn-info" })</pre></i></li>
+                </ul>
+            </li>
+        </ul>
+
+    }
+</table>
+
+@*@foreach (var item in Model)
+    {
+
+        <div class="portfolio-container">
+            <div class="portfolio-card">
+                <div class="portfolioImage">
+                    <h2 class="portfolioTitle"></h2>
+                    <img src="@Html.DisplayFor(modelItem => item.URL_Image)" alt="paste image"  width="250" srcset="" />
+                </div>
+                <div class="portfolioContent">
+                    <p>Price: @Html.DisplayFor(modelItem => item.Price)</p>
+                    <p>Description : @Html.DisplayFor(modelItem => item.Description)</p>
+                    <p>Size: @Html.DisplayFor(modelItem => item.Size)</p>
+                    <p>Email: @Html.DisplayFor(modelItem => item.Email)</p>
+                    <p><pre>@Html.ActionLink("Edit", "Edit", new { @class = "btn btn-info", id = item.Id }, new { @class = "btn btn-info" }) @Html.ActionLink("Delete", "Delete", new { @class = "btn btn-info", id = item.Id }, new { @class = "btn btn-info" })</pre></p>
+                </div>
+            </div>
+        </div>
+
+    }*@
+
+
